@@ -1,0 +1,91 @@
+:root{
+    --preto:     #141414;
+    --coral:     #ff7a59;
+    --coralEsc:  #e85c3a;
+    --areia:     #fff8f0;
+    --branco:    #ffffff;
+    --borda:     #ede4da;
+    --texto:     #2b2b2b;
+    --textoSuav: #6b6b6b;
+    --verde:     #2ec4b6;
+
+}
+body{
+    background-color: var(--areia);
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 80px;
+    gap: 20px;
+    position: relative;
+}
+.tituloGrande{
+    font-size: 40px;
+    font-weight: bold;
+}
+.tituloSecao{
+    font-size: 28px;
+    font-weight: bold;
+}
+.subtitulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+.textocinza{
+    font-size: 18px;
+    color: var(--textoSuav);
+}
+.miniText{
+    color: var(--textoSuav);
+    font-size: 13px;
+}
+.textoOrange{
+    font-size: 16px;
+    color: var(--coral);
+}
+.logo_selc {
+    display: flex;
+    justify-content: center;
+    
+    & img{
+        width: 160px;
+        height: 101px;
+    }
+}
+
+
+.space20{
+    height: 20px;
+    width:  0px;
+}
+@font-face {
+    font-family: 'sl';
+    src: url('/fontes/speedlines.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#header, #footer {
+    margin:0;
+    background-color: #898989;
+    padding: 25px 0;
+    & .logo{
+        display: flex;
+        align-items: center;
+        & img{
+            height: 40px;
+            };
+        padding-left: 20px;
+        font-family: 'sl';
+        font-size: 50px;
+        };
+}
+
+#footer{
+
+}
+
