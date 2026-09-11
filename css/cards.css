@@ -38,6 +38,16 @@ body{
     display: none;
 }
 @media (max-width: 1255px) {
+    .tituloGrande, .textocinza, .textoOrange{
+        text-align: center;
+    }
+    .textocinza, .textoOrange{
+        width: 90vw;
+    }
+    .tituloGrande{
+        width: 75vw;
+    }
+     /*  */
     #cardSelec{
         width: 90vw;
         flex-direction: row;
@@ -48,12 +58,18 @@ body{
     #card{
         flex-shrink: 1;
     }
+
 }
 
-
-
+@media(max-width: 900px) {
+    .logo_selc > img{
+        width: 320px;
+        height: 202px;
+    }    
+}
 
 @media (max-width: 600px) {
+    
     #cardSelec{
         width: 90vw;
         flex-direction: column;
@@ -85,4 +101,5 @@ body{
         font-weight: 600;
         color: #C9BFB5;
     }
+
 }
