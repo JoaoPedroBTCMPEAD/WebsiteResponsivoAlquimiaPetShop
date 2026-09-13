@@ -9,6 +9,7 @@
     border-bottom-color: var(--borda);
     padding-left: 80px;
     gap: 16px;
+
 }
 .anim{
     width: fit-content;
@@ -25,9 +26,18 @@
     font-size: 15px;
     font-weight: 600;
     color: var(--preto);
+    cursor: pointer;
     & img{
         width: 34px;
         height: 34px;
         border-radius: 50%;
     }
+    transition: transform 0.3s ease-in-out; 
+}
+.anim:hover{
+    transform: scale(1.1);
+}
+.active{
+    background-color: var(--coralEsc);   
+    color: var(--branco); 
 }

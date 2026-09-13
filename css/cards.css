@@ -11,6 +11,7 @@ body{
     position: relative;
 }
 .card{
+    cursor: pointer;
     background-color: var(--branco);
     width: 200px;
     height: 224px;
@@ -36,6 +37,10 @@ body{
         justify-content: center;
         align-items: center;
     }
+    transition: transform 0.3s ease-in-out; 
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .invzArr{
     display: none;

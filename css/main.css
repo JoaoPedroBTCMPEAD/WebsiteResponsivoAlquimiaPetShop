@@ -77,6 +77,7 @@ body{
             padding-left: 80px;
             height: 79.67px;
             width: 138.23px;
+            cursor: pointer;
         };
         & #menu{
             padding-right: 80px;
