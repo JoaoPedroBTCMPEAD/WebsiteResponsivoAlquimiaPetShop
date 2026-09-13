@@ -18,31 +18,31 @@
     <div class="textocinza">Escolha um segmento e mostramos apenas os produtos daquele nicho.</div>
     <div class="space20"></div>
     <div id="cardSelec">
-        <div class="card"><img src="img/icones_selec/caes.png" alt="">
+        <div class="card" onclick="produtos('cao')"><img src="img/icones_selec/caes.png" alt="">
         <div>
             <div class="subtitulo">Cães</div>
             <div class="miniText">Ração, ossos, brinquedos</div>
         </div><div class="invzArr">›</div>
         </div>
-        <div class="card"><img src="img/icones_selec/gatos.png" alt="">
+        <div class="card" onclick="produtos('gato')"><img src="img/icones_selec/gatos.png" alt="">
         <div>
             <div class="subtitulo">Gatos</div>
             <div class="miniText">Ração, areia, arranhadores</div>
         </div><div class="invzArr">›</div>
         </div>
-        <div class="card"><img src="img/icones_selec/aves.png" alt="">
+        <div class="card" onclick="produtos('ave')"><img src="img/icones_selec/aves.png" alt="">
         <div>
             <div class="subtitulo">Aves</div>
             <div class="miniText">Sementes, poleiros, gaiolas</div>
         </div><div class="invzArr">›</div>
         </div>
-        <div class="card"><img src="img/icones_selec/roedores.png" alt="">
+        <div class="card" onclick="produtos('roedor')"><img src="img/icones_selec/roedores.png" alt="">
         <div>
             <div class="subtitulo">Roedores</div>
             <div class="miniText">Feno, casinhas e potes</div>
         </div><div class="invzArr">›</div>
         </div>
-        <div class="card"><img src="img/icones_selec/peixes.jpg" alt="">
+        <div class="card" onclick="produtos('peixe')"><img src="img/icones_selec/peixes.jpg" alt="">
         <div>
             <div class="subtitulo">Peixes</div>
             <div class="miniText">Ração, filtros, enfeites</div>
@@ -50,8 +50,7 @@
         </div>
     </div>
     <div class="space20"></div>
-    <div class="textoOrange">Ver todos os produtos da loja</div>
-    <!-- <p id="footer"> </p> -->
-    <!-- <script src="js/headerFooter.js"></script> -->
+    <div class="textoOrange" onclick="produtos('todos')">Ver todos os produtos da loja</div>
+    <script src="js/prods.js"></script>
 </body>
 </html>
