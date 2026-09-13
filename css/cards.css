@@ -6,6 +6,9 @@
 }
 body{
     overflow-x: hidden;
+    padding: 90px 80px;
+    gap: 20px;
+    position: relative;
 }
 .card{
     background-color: var(--branco);

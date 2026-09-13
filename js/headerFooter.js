@@ -1,9 +1,21 @@
-const header = document.querySelector('#header');
-const footer = document.querySelector('#footer');
-let presentPage = window.location.pathname.split("/").pop().split(".").shift();
-
-window.addEventListener('load', function (presentPage) {
-    
-    header.innerHTML = '<div class="logo"> <img src="img/RodaII.svg">Prado center car';
-    footer.innerHTML = '<div class="logo"> <img src="img/RodaII.svg">Contatos';
+window.addEventListener("DOMContentLoaded", () =>{
+    header = '';
+    footer = '';
 })
+
+async function loadHeader() {
+    const response = await fetch("recursos/header.html");
+    const header = await response.text();
+
+    document.querySelector("#header").innerHTML = header;
+}
+
+async function loadFooter() {
+    const response = await fetch("recursos/footer.html");
+    const footer = await response.text();
+
+    document.querySelector("#footer").innerHTML = footer;
+}
+
+loadHeader();
+loadFooter();

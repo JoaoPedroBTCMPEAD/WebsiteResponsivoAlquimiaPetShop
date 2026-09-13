@@ -18,9 +18,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 90px 80px;
-    gap: 20px;
-    position: relative;
+
 }
 .tituloGrande{
     font-size: 40px;
@@ -36,6 +34,11 @@ body{
 }
 .textocinza{
     font-size: 18px;
+    color: var(--textoSuav);
+}
+.txtPqCinz{
+    font-size: 14px;
+    font-weight: 500;
     color: var(--textoSuav);
 }
 .miniText{
@@ -56,35 +59,37 @@ body{
     }
 }
 
-
 .space20{
     height: 20px;
     width:  0px;
 }
-@font-face {
-    font-family: 'sl';
-    src: url('/fontes/speedlines.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-#header, #footer {
-    margin:0;
-    background-color: #898989;
-    padding: 25px 0;
-    & .logo{
-        display: flex;
-        align-items: center;
+#header{
+    display: flex;
+    align-items: center;
+    background-color: var(--branco);
+    height: 125px;
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--borda);
         & img{
-            height: 40px;
-            };
-        padding-left: 20px;
-        font-family: 'sl';
-        font-size: 50px;
+            padding-left: 80px;
+            height: 79.67px;
+            width: 138.23px;
         };
-}
+        & #menu{
+            padding-right: 80px;
+            margin-left: auto;
+            display: flex;
+            gap: 32px;
+            & div{
+                float: left;
+            }
+        }
+    
 
+}
 #footer{
 
 }

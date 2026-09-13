@@ -1,0 +1,33 @@
+#selecAnim{
+    height: 72px;
+    width: 100%;
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--borda);
+    padding-left: 80px;
+    gap: 16px;
+}
+.anim{
+    width: fit-content;
+    height: 44px;
+    background-color: var(--areia);
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px 0px 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--borda);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--preto);
+    & img{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+    }
+}
