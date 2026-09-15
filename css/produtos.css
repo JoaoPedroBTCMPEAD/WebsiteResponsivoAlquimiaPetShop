@@ -7,10 +7,9 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--borda);
-    padding-left: 80px;
     gap: 16px;
-
 }
+
 .anim{
     width: fit-content;
     height: 44px;
@@ -40,4 +39,76 @@
 .active{
     background-color: var(--coralEsc);   
     color: var(--branco); 
+}
+.hero{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 448px;
+    & .heroDir{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        width: 590px;
+        gap: 16px;
+    }
+    & img{
+        width: 520px; 
+        height: 320px;   
+        margin-right: 80px;
+        margin-left: auto; 
+    }
+}
+button{
+    height: 50px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight:600;
+    border-style: solid;
+    border-width: 1.5px;
+    padding-left: 26px;
+    padding-right: 26px;
+    cursor: pointer;
+}
+#verProds{
+    color: var(--branco);
+    background-color: var(--coralEsc);
+    border-style: none;
+}
+#falarWts{
+    color: var(--preto);
+    background-color: var(--areia);
+    border-color: var(--borda);
+}
+
+#prodContainer{
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.prod{
+    border-radius: 12px;
+    border-color: var(--borda);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.nomeTitu{
+    font-weight: 500;
+    font-size: 17;
+}
+#preencher{margin-top: 72px;}
+.btnContainer{
+    height: 40px;
+}
+.desc{
+    color: var(--textoSuav);
+    font-size: 14px;
+}
+#telaProds{
+    width: 100%;
+    background-color: var(--branco);
+    gap: 24px;
+    & div{
+        margin-left: 80px;
+    }
 }

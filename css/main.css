@@ -20,8 +20,16 @@ body{
     align-items: center;
 
 }
+.tituloHero{
+    font-size: 44px;
+    font-weight: bold;
+}
 .tituloGrande{
     font-size: 40px;
+    font-weight: bold;
+}
+.tituloMedio{
+    font-size: 32px;
     font-weight: bold;
 }
 .tituloSecao{
@@ -36,6 +44,10 @@ body{
     font-size: 18px;
     color: var(--textoSuav);
 }
+.textoMdcinza{
+    font-size: 16px;
+    color: var(--textoSuav);
+}
 .txtPqCinz{
     font-size: 14px;
     font-weight: 500;
@@ -47,6 +59,11 @@ body{
 }
 .textoOrange{
     font-size: 16px;
+    color: var(--coral);
+}
+.textoPqOrange{
+    font-size: 11px;
+    font-weight: 500;
     color: var(--coral);
 }
 .logo_selc {
@@ -88,8 +105,6 @@ body{
                 float: left;
             }
         }
-    
-
 }
 #footer{
 

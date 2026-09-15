@@ -11,14 +11,35 @@
 <body>
     <div id="header"> </div>
 
-    <div id="selecAnim" class="txtPqCinz">Comprando para:
+    <div id="selecAnim" class="txtPqCinz">
+        <div style="width: 40px;"></div>Comprando para:
         <div id="cao" onclick="escolhe(this.id);" class="anim"><img src="img/icones_selec/caes.png" alt=""> Cães</div>
         <div id="gato" onclick="escolhe(this.id);" class="anim"><img src="img/icones_selec/gatos.png" alt=""> Gatos</div>
         <div id="ave" onclick="escolhe(this.id);" class="anim"><img src="img/icones_selec/aves.png" alt=""> Aves</div>
         <div id="roedor" onclick="escolhe(this.id);"  class="anim"><img src="img/icones_selec/roedores.png" c alt=""> Roedores</div>
         <div id="peixe" onclick="escolhe(this.id);" class="anim"><img src="img/icones_selec/peixes.jpg" alt=""> Peixes</div>
     </div>
+    <div class="hero">
+        <div class="heroDir">
+            <div class="tituloHero">Tudo para o seu cão, pertinho de você</div>
+            <div class="textocinza">Ração, brinquedos, acessórios, produtos de higiene e ossos naturais selecionados. Confira o catálogo e passe na loja em Arealva/SP.</div>
+            <div class="btns">
+                <button id="verProds">Ver produtos</button>
+                <button id="falarWts">Falar no Whatsapp</button>                
+            </div>
+        </div>
+        <img src="img/animais_zoom.png" alt=""> 
+    </div>
+    <div id="telaProds">
+        <div id="preencher" class="tituloMedio"></div>  
+        <div class="textoMdcinza">Filtre por categoria e veja o que temos disponível na loja</div>  
+        <div class="btnContainer">
 
+        </div>
+        <div id="prodContainer">
+            
+        </div>
+    </div>
     <div id="footer"> </div>
     <script src="js/headerFooter.js"></script>
     <script src="js/prods.js"></script>
