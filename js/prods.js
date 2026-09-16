@@ -124,3 +124,17 @@ function populateProdGrid(  ){ //inserirParametroDepois
     })
 }
 populateProdGrid();
+function dropMenu(btn){
+    if(window.getComputedStyle(btn, null).display){
+        var drpdwn = document.getElementById('menu');
+        drpdwn.classList.toggle('mostrarMenu');
+    }
+}
+window.onclick = function(event) {
+  if (!(event.target.matches('#menu') || event.target.matches('#drpdownBt'))) {
+    var dropdowns = document.getElementById("menu");
+    if (dropdowns.classList.contains('mostrarMenu')) {
+        dropdowns.classList.remove('mostrarMenu');
+    }
+  }
+}

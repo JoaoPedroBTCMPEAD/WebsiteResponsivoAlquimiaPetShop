@@ -53,7 +53,7 @@
     & .heroDir{
         display: flex;
         flex-direction: column;
-        margin-left: 80px;
+        margin-left: 10%;
         width: 590px;
         gap: 16px;
     }
@@ -209,6 +209,9 @@ button{
         height: 23.8px;
     }
 }
+#drpdownBt{
+    display: none;
+}
 @media(max-width: 1040px) {
     .hero{
         flex-direction: column;    
@@ -226,6 +229,7 @@ button{
         }
         & .heroDir{
             width: 90%;
+            margin-left: 0%;
         }
     }    
     #selecAnim{
@@ -243,7 +247,7 @@ button{
         width: auto;
         & > div{
             width: auto;
-            margin-left: 10%;
+            margin-left: 5%;
             margin-right: auto;
             
         }
@@ -309,8 +313,85 @@ button{
         gap: 10px;
         flex-wrap: wrap;
     }
+    #header > img{
+        padding-left: 10%;
+    }
+    #drpdownBt{
+        display: block;
+        font-size: 60px;
+        padding: 0px;
+        margin-right: 10%;
+        margin-left: auto;
+        line-height: 0px;
+        background-color: var(--branco);
+        border-style: none;
+    }
+    #menu{
+        display: none;
+    }
+    #header .mostrarMenu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--branco);
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+        top: 126px;
+        justify-content: center;
+        gap: 16px;
+        padding: 20px;
+        align-items: end;
+        & div{
+            color: var(--preto);
+            display: block;
+        }
+    }
+    .btnContainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+@media(max-width: 693px){
+    .prod{width: 90%;
+    & img{
+        margin-right: auto;
+        margin-left: auto;
+        width: 326px;
+        height: 200px;
+    }}
 }
 
 @media(max-width: 390px) {
-
+#header{
+    & img{
+        padding-left: 5%;
+        height: 43px;
+        width: 68px;
+    }
+}
+    #drpdownBt{
+        margin-right: 5%;
+    }
+    #selecAnim > *{
+    padding-left: 20px;
+    }
+    #animalbuttonContainer{
+    width:calc(100vw - 100px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-right: 80px;
+    }
+    .hero .heroDir{
+        margin-left: 5%;
+        margin-right: auto;
+    }
+    #telaProds > div{
+        margin-left: 5%;
+        margin-right: auto;
+        width: 90%;
+    }
 }

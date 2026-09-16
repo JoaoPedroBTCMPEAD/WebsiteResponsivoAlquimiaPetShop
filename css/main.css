@@ -10,7 +10,11 @@
     --verde:     #2ec4b6;
 
 }
+html{
+
+}
 body{
+    overflow-x: hidden;
     background-color: var(--areia);
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -101,17 +105,17 @@ body{
             width: 138.23px;
             cursor: pointer;
         };
-        & #menu{
-            padding-right: 80px;
-            margin-left: auto;
-            display: flex;
-            gap: 32px;
-            & div{
-                float: left;
-            }
-        }
-}
 
+}
+#menu{
+    padding-right: 80px;
+    margin-left: auto;
+    display: flex;
+    gap: 32px;
+    & div{
+        float: left;
+    }
+}
 #footer{
     display: flex;
     inline-size: 100%;
