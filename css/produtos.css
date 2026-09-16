@@ -36,6 +36,11 @@
 .anim:hover{
     transform: scale(1.1);
 }
+#animalbuttonContainer{
+    display: flex;
+    gap: 12px;
+}
+
 .active{
     background-color: var(--coralEsc);   
     color: var(--branco); 
@@ -85,7 +90,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    
+    width: 85%;    
 }
 .prod{
     border-radius: 12px;
@@ -203,4 +208,109 @@ button{
         width: 23.8px;
         height: 23.8px;
     }
+}
+@media(max-width: 1040px) {
+    .hero{
+        flex-direction: column;    
+        height: auto;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        gap: 16px;
+        width: auto;
+        & img{
+            margin-right: auto;
+            width: 90%;
+            object-fit: cover;
+            border-radius: 20px;
+
+        }
+        & .heroDir{
+            width: 90%;
+        }
+    }    
+    #selecAnim{
+        flex-direction: column;
+        align-items: start;
+        
+        height: 100px;
+    }
+    #selecAnim > *{
+    padding-left: 80px;
+    }
+ 
+    #telaProds{
+        align-items: start;
+        width: auto;
+        & > div{
+            width: auto;
+            margin-left: 10%;
+            margin-right: auto;
+            
+        }
+    }
+    #sobreLoja{
+        flex-direction: column;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        & > img{
+            margin-right: auto;
+            width: 90%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    #contatos{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #contatosBox{
+        
+        flex-wrap: wrap;
+    }
+    .contCards{
+        flex: 0 1 45%;;
+    }
+    #footer{
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        padding-bottom: 30px;
+        & img{
+        width: auto;
+        height: 157px;
+        margin-left: 0px;
+    }
+    .miniText{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10px;
+        background-color: var(--preto);
+        margin: 0px;
+    }
+   
+    }
+}
+@media(max-width: 719px) {
+    .contCards{
+        flex: 0 1 100%;
+    }
+    #animalbuttonContainer{
+        width:calc(100vw - 100px);
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-right: 80px;
+    }
+    .btns{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 390px) {
+
 }
