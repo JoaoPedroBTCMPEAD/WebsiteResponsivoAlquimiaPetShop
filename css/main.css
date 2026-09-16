@@ -40,6 +40,11 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
+.text16Semibold{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--preto);
+}
 .textocinza{
     font-size: 18px;
     color: var(--textoSuav);
@@ -106,7 +111,23 @@ body{
             }
         }
 }
-#footer{
 
+#footer{
+    display: flex;
+    inline-size: 100%;
+    box-sizing: border-box;
+    background-color: var(--preto);
+    height: 136px;
+    justify-content: center;
+    align-items: center;
+    & img{
+        width: 116px;
+        height: 72px;
+        margin-left: 32px;
+    }
+    .miniText{
+        margin-right: 32px;
+        margin-left: auto;
+    }
 }
 

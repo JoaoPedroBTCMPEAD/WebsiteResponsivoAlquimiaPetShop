@@ -30,6 +30,18 @@ window.addEventListener("DOMContentLoaded", () =>{ //Usa o valor na url para man
     const url = new URLSearchParams(window.location.search);
     escolhe(url.get('animal'));
 })
+function btnCateg(btnAtivar){
+    if (!btnAtivar.classList.contains('btnAtivado')){
+    todosBtn = document.querySelectorAll('.btnCateg');
+    todosBtn.forEach(btn => {
+        if(btn == btnAtivar){
+            btn.classList.add('btnAtivado');
+        }else{
+            btn.classList.remove('btnAtivado'); 
+        }
+    })
+    }
+}
 
 function escolhe(Animal){// Escolhe a categoria(animal) de produtos a serem mostrados
     if(Animal != 'todos'){
@@ -54,4 +66,61 @@ function escolhe(Animal){// Escolhe a categoria(animal) de produtos a serem most
             element.classList.remove('active'); 
         }
     });
+    // populateProdGrid(Animal); O animal selecionado sera usado como parametro para quais produtos serao mostrados 
 }
+const prodsGroup = [
+    ["../prod_imgs/0.png",
+     "Categoria0",
+     "titulo0",
+     "desc0"
+    ],
+    ["../prod_imgs/1.png",
+     "Categoria1",
+     "titulo1",
+     "desc1"
+    ],
+    ["../prod_imgs/2.png",
+     "Categoria2",
+     "titulo2",
+     "desc2"
+    ],
+    ["../prod_imgs/3.png",
+     "Categoria3",
+     "titulo3",
+     "desc3"
+    ],
+    ["../prod_imgs/4.png",
+     "Categoria4",
+     "titulo4",
+     "desc4"
+    ],
+    ["../prod_imgs/5.png",
+     "Categoria5",
+     "titulo5",
+     "desc5"
+    ],
+    ["../prod_imgs/6.png",
+     "Categoria6",
+     "titulo6",
+     "desc6"
+    ],
+    ["../prod_imgs/7.png",
+     "Categoria7",
+     "titulo7",
+     "desc7"
+    ],
+]
+
+function populateProdGrid(  ){ //inserirParametroDepois
+    const prodCont = document.querySelector("#prodContainer");
+    prodsGroup.forEach(([img, categ, tit, desc]) =>{
+        prodCont.innerHTML += `
+        <div class="prod"><img src="${img}" alt="">
+        <div class="categSubt textoPqOrange">${categ}</div>
+        <div class="nomeTitu ">${tit}</div>
+        <div class="desc ">${desc}</div>
+        </div>
+        `;
+    })
+}
+populateProdGrid();

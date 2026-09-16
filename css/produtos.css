@@ -82,14 +82,27 @@ button{
 }
 
 #prodContainer{
-    gap: 25px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
 }
 .prod{
     border-radius: 12px;
     border-color: var(--borda);
     border-style: solid;
     border-width: 1px;
+    padding: 14px 14px 18px 14px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    & img{
+        width: 270px;
+        height: 160px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
 }
 
 .nomeTitu{
@@ -98,17 +111,96 @@ button{
 }
 #preencher{margin-top: 72px;}
 .btnContainer{
-    height: 40px;
+    & button{
+        height: 40px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-color: var(--borda);
+        color: var(--preto);
+        background-color: var(--areia);
+    }
+    & .btnAtivado{
+        border-color: var(--preto);
+        color: var(--branco);
+        background-color: var(--preto);
+    }
 }
+
 .desc{
     color: var(--textoSuav);
     font-size: 14px;
 }
 #telaProds{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: var(--branco);
     gap: 24px;
-    & div{
+    & > div{
         margin-left: 80px;
+    }
+    padding-bottom: 72px;
+}
+#sobreLoja{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding: 72px 80px;
+    justify-content: center;
+    align-items: center;
+    & > img{
+        width: 440px;
+        height: 300px;
+        border-radius: 24px;
+    }
+}
+.sobreTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.infobox{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+#contatos{
+    gap: 24px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    inline-size: 100%;
+    box-sizing: border-box;
+}
+#contatosBox{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+}
+.contCards{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--areia);
+    border-color: var(--borda);
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+    padding-left: 20px;
+    flex: 0 1 calc((100% - (20px * 3))/4);
+    gap: 6px;
+    & img{
+        width: 23.8px;
+        height: 23.8px;
     }
 }
