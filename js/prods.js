@@ -26,9 +26,9 @@ var presSelec;
 function retornaInicio(){
     const url = new URL(window.location.href)
     const mainURL = `${url.origin}/${url.pathname.split("/")[1]}`;
-    console.log(url);
-    console.log(mainURL);
-    // window.location.href = mainURL;
+    // console.log(url);
+    // console.log(mainURL);
+    window.location.href = mainURL;
 }
 window.addEventListener("DOMContentLoaded", () =>{ //Usa o valor na url para mandar o animal para a função de escolha quando a pagina é carregada
     const url = new URLSearchParams(window.location.search);
