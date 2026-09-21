@@ -354,6 +354,9 @@ button{
         flex-wrap: wrap;
         gap: 5px;
     }
+    .anim{
+        overflow: visible;
+    }
 }
 @media(max-width: 693px){
     .prod{width: 90%;
