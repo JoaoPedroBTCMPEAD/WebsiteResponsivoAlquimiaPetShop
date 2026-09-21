@@ -302,11 +302,16 @@ button{
     .contCards{
         flex: 0 1 100%;
     }
+    #selecAnim{
+        height: 122px;
+    }
     #animalbuttonContainer{
         width:calc(100vw - 100px);
         overflow-x: scroll;
-        overflow-y: hidden;
         padding-right: 80px;
+        height: 64px;
+        flex-shrink: 0;
+        align-items: center;
     }
     .btns{
         display: flex;
@@ -353,9 +358,6 @@ button{
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
-    }
-    .anim{
-        overflow: visible;
     }
 }
 @media(max-width: 693px){
