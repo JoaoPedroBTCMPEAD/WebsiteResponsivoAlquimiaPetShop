@@ -24,7 +24,7 @@ var listTitulos =
     ];
 var presSelec;
 function retornaInicio(){
-    const url = new URL(window.location.href.origin)
+    const url = new URL(window.location.href)
     const mainURL = `${url}/${url.pathname.split("/")[1]}`;
     console.log(mainURL)
     // window.location.href = mainURL;
