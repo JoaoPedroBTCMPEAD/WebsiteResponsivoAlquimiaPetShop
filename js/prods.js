@@ -24,7 +24,8 @@ var listTitulos =
     ];
 var presSelec;
 function retornaInicio(){
-    window.location.href = "../"
+    const mainURL = `${window.location.href.origin}/${url.pathname.split("/")[1]}`;
+    window.location.href = mainURL;
 }
 window.addEventListener("DOMContentLoaded", () =>{ //Usa o valor na url para mandar o animal para a função de escolha quando a pagina é carregada
     const url = new URLSearchParams(window.location.search);
