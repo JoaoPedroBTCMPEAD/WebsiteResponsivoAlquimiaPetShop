@@ -24,8 +24,9 @@ var listTitulos =
     ];
 var presSelec;
 function retornaInicio(){
-    const mainURL = `${window.location.href.origin}/${url.pathname.split("/")[1]}`;
-    window.location.href = mainURL;
+    const mainURL = `${URL(window.location.href).origin}/${url.pathname.split("/")[1]}`;
+    console.log(mainURL)
+    // window.location.href = mainURL;
 }
 window.addEventListener("DOMContentLoaded", () =>{ //Usa o valor na url para mandar o animal para a função de escolha quando a pagina é carregada
     const url = new URLSearchParams(window.location.search);
@@ -70,42 +71,42 @@ function escolhe(Animal){// Escolhe a categoria(animal) de produtos a serem most
     // populateProdGrid(Animal); O animal selecionado sera usado como parametro para quais produtos serao mostrados 
 }
 const prodsGroup = [
-    ["../prod_imgs/0.png",
+    ["prod_imgs/0.png",
      "Categoria0",
      "titulo0",
      "desc0"
     ],
-    ["../prod_imgs/1.png",
+    ["prod_imgs/1.png",
      "Categoria1",
      "titulo1",
      "desc1"
     ],
-    ["../prod_imgs/2.png",
+    ["prod_imgs/2.png",
      "Categoria2",
      "titulo2",
      "desc2"
     ],
-    ["../prod_imgs/3.png",
+    ["prod_imgs/3.png",
      "Categoria3",
      "titulo3",
      "desc3"
     ],
-    ["../prod_imgs/4.png",
+    ["prod_imgs/4.png",
      "Categoria4",
      "titulo4",
      "desc4"
     ],
-    ["../prod_imgs/5.png",
+    ["prod_imgs/5.png",
      "Categoria5",
      "titulo5",
      "desc5"
     ],
-    ["../prod_imgs/6.png",
+    ["prod_imgs/6.png",
      "Categoria6",
      "titulo6",
      "desc6"
     ],
-    ["../prod_imgs/7.png",
+    ["prod_imgs/7.png",
      "Categoria7",
      "titulo7",
      "desc7"
